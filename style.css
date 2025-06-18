@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.main {
+    position: relative;
+}
+
+.nav {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 40px;
+    font-size: 12px;
+    position: fixed;
+    z-index: 10000000;
+    mix-blend-mode: difference;
+
+}
+
+.nav-mid {
+    display: flex;
+    gap: 5px;
+}
+
+.page1 {
+    height: 190vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+}
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+}
+
+/* .head {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.head h1 {
+    color: white;
+    font-size: 20vw;
+
+}
+
+.head-end {
+    height: 90px;
+    width: 55%;
+    display: flex;
+    gap: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 3vw;
+}
+
+.vid {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.vid video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.play {
+    position: absolute;
+    padding: 2.8vw 1.5vw;
+    background-color: rgb(255, 136, 0);
+    border-radius: 50%;
+    opacity: 0;
+   
+}
+.play h4{
+    color: white;
+     font-size: 10px;
+}
+.page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.page2-h1 {
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    border-bottom: 2px solid gray;
+    padding: 0vh 2vw;
+}
+
+.page2-cnt {
+    display: flex;
+    padding: 2vw 3vw;
+    justify-content: space-around;
+}
+
+.cnt2 {
+    padding: 2vw 29vw;
+    line-height: 3vh;
+
+}
+.cnt2 a{
+    color: rgb(255, 136, 0);
+    text-decoration: none;
+}
+.cnt2 h4 {
+    margin-bottom: 15px;
+}
+
+.pg3-txt {
+    width: 100%;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    font-size: 12px;
+
+}
+
+.pg3-img {
+    background-color: black;
+    width: 100%;
+    padding: 2vw 2vw;
+    object-fit: cover;
+    object-position: center;
+}
+
+.pg3-img img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.page4 {
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 3vw 3vw;
+    gap: 2vw;
+    ;
+    object-fit: cover;
+}
+
+.page4 img {
+    height: 100%;
+    width: 50%;
+
+
+}
+
+.page5 {
+    height: 130vh;
+    width: 100%;
+}
+
+.pg5-img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid gainsboro;
+}
+
+.pg5-img img {
+    height: 200px;
+    width: 7vw;
+
+}
+
+.scroll{
+    height: 50vh;
+     overflow-x: auto;
+    white-space: nowrap;
+     display: flex ; 
+     margin-top: 60px;
+    
+     
+}
+.scrolling{
+    display: flex;
+    align-content: start;
+    animation: moving 40s linear infinite;
+   
+}
+.cards{
+    gap: 3vw;
+    object-fit: cover;
+    display: flex;
+    align-items: flex-start;
+    
+}
+.cards img{
+    width: 24vw;
+    height: auto;
+   
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes moving{
+    from{
+        transform:translate(0%);
+    }
+    to{
+        transform: translate(-85%);
+    }
+}
+.page6{
+    height: 190vh;
+    width: 100%;
+    color: black;
+}
+.pg6-pt1{
+    height: 70vh;
+}
+.page6 .our{
+    height: 15vh;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 2vw 3vw;
+}
+.page6 .txt{
+      height: 20vh;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    padding: 2vw 3vw;
+    display: flex;
+    align-items: center;
+    gap: 40%;
+}
+.page6 .txt2{
+    gap: 34.7vw;
+}
+
+.page6-pt2{
+    height: 100vh;
+    width: 100%;
+    height: auto;
+    width: 100%;
+    margin-top: 3vw;
+    object-fit: cover;
+    padding: 2vw 1vw;
+ 
+}
+.page6-pt2 video{
+  height: 100%;
+  width: 100%;
+}
+.page7{
+    height: 140vh;
+    width: 100%;
+    background-color: white;
+  
+}
+.page7 .about{
+    height: 60vh;
+    width:100%;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page7 .about a{
+    font-size: 40px;
+    border: none;
+    margin-top: 30px;
+    color: black;
+}
+.a-box{
+    padding: 2vw 2vw;
+}
+.abt-box{
+    opacity: 0;
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.footer img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 300;
+}
+.footer2{
+    height: 40vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer h1{
+    font-size: 17vw;
+    color: rgb(255, 255, 255);
+}
